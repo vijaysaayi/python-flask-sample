@@ -1,1 +1,1 @@
-web: gunicorn server:app
+web: GUNICORN_CMD_ARGS="--bind=0.0.0.0 --timeout 600" gunicorn server:app
